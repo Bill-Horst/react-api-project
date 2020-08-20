@@ -1,0 +1,25 @@
+@import '../style/themes.scss';
+
+.category-page-product-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  row-gap: 10px;
+  column-gap: 10px;
+
+  .product {
+    flex-basis: 32%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    
+    @media only screen and (max-width: $wide_bp) {
+      flex-basis: 49% !important;
+    }
+    
+    @media only screen and (max-width: $narrow_bp){
+      flex-basis: 100% !important;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;700&display=swap');
+
+/* COLORS */
+$primary_color: #e619d8;
+$secondary_color: #e61971;
+$tertiary_color: #8e19e6;
+$light: #f1e4fc;
+/* END COLORS */
+
+/* BREAKPOINTS */
+$wide_bp: 800px;
+$narrow_bp: 400px;
+/* END BREAKPOINTS */
+
+/* LAYOUT */
+.main-view {
+  max-width: 800px;
+  margin: auto;
+}
+.main-view-large {
+  max-width: 1400px;
+  margin: auto;
+}
+/* END LAYOUT */
+
+/* ELEMENTS */
+a, button, p, div {
+  font-family: 'Averia Serif Libre', cursive;
+}
+
+button, .custom-button {
+  color: black;
+  background-color: $secondary_color;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px $tertiary_color;
+  border: none;
+  padding: 12px;
+  font-size: 12pt;
+  position: relative;
+  font-weight: 700;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    box-shadow: none;
+    top: 1px;
+    left: 1px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+a {
+
+  &:active {
+    color: $tertiary_color;
+  }
+}
+/* END ELEMENTS */

@@ -1,0 +1,28 @@
+@import '../style/themes.scss';
+
+.buy-all-button {
+  margin-right: 20px;
+}
+
+.cart-page-product-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  row-gap: 10px;
+  column-gap: 10px;
+
+  .product {
+    flex-basis: 19%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+    @media only screen and (max-width: $wide_bp) {
+      flex-basis: 32% !important;
+    }
+    
+    @media only screen and (max-width: $narrow_bp){
+      flex-basis: 50% !important;
+    }
+  }
+}
